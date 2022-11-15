@@ -14,7 +14,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         """Entrypoint for command"""
-        self.stdout.write('Writing for database...')
+        self.stdout.write('Writing to database...')
         db_up = False
         while not db_up:
             try:
